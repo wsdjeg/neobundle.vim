@@ -135,7 +135,7 @@ https://github.com/thinca/vim-themis
 
 ## Tips
 
-If you use a single .vimrc across systems where build programs are
+1. If you use a single .vimrc across systems where build programs are
 named differently (e.g. GNU Make is often `gmake` on non-GNU
 systems), the following pattern is useful:
 
@@ -146,3 +146,7 @@ if system('uname -o') =~ '^GNU/'
 endif
 NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
 ```
+
+2. neobundle.vim has an user interface like vim-plug?
+
+Built-in neobundle.vim does not have one, but if you want one, we recommend using github.com/wsdjeg/dein-ui.vim
